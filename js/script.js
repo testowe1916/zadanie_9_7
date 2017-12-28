@@ -128,11 +128,11 @@ function setGamePoints() {
 
 function gameEnded() {
     if (player.score == 10) {
-        gameState = 'the end'
-        gameMaster.innerHTML = 'The winner is' + player.name; 
+        gameState = 'ended';
+        gameMaster.innerHTML = 'The winner is' + ' ' + player.name; 
     setGameElements();
-}   else if (computer.score == 10) {
-        gameState = 'the end'
+    }   else if (computer.score == 10) {
+        gameState = 'ended';
         gameMaster.innerHTML = 'The winner is computer. Shame!'; 
     setGameElements();
 }
