@@ -130,10 +130,10 @@ function gameEnded() {
     if (player.score == 10) {
         gameState = 'ended';
         gameMaster.innerHTML = 'The winner is' + ' ' + player.name; 
-    setGameElements();
-    }   else if (computer.score == 10) {
+    	setGameElements();
+    } else if (computer.score == 10) {
         gameState = 'ended';
         gameMaster.innerHTML = 'The winner is computer. Shame!'; 
-    setGameElements();
-}
+    	setGameElements();
+	}
 }
